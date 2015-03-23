@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A52075B1AC07065005FE8A7 /* Foundation_TechD.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2A52075A1AC07065005FE8A7 /* Foundation_TechD.h */; };
-		2A52075D1AC07065005FE8A7 /* Foundation_TechD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A52075C1AC07065005FE8A7 /* Foundation_TechD.m */; };
 		2A5207631AC07065005FE8A7 /* libFoundation+TechD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5207571AC07065005FE8A7 /* libFoundation+TechD.a */; };
+		2A5207761AC0710A005FE8A7 /* NSJSONSerialization+TechD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5207731AC0710A005FE8A7 /* NSJSONSerialization+TechD.m */; };
+		2A5207771AC0710A005FE8A7 /* NSString+TechD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5207751AC0710A005FE8A7 /* NSString+TechD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +29,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				2A52075B1AC07065005FE8A7 /* Foundation_TechD.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,10 +36,13 @@
 
 /* Begin PBXFileReference section */
 		2A5207571AC07065005FE8A7 /* libFoundation+TechD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libFoundation+TechD.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A52075A1AC07065005FE8A7 /* Foundation_TechD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Foundation_TechD.h; sourceTree = "<group>"; };
-		2A52075C1AC07065005FE8A7 /* Foundation_TechD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Foundation_TechD.m; sourceTree = "<group>"; };
 		2A5207621AC07065005FE8A7 /* Foundation+TechDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Foundation+TechDTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A5207681AC07065005FE8A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A5207711AC0710A005FE8A7 /* Foundation+TechD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Foundation+TechD.h"; sourceTree = "<group>"; };
+		2A5207721AC0710A005FE8A7 /* NSJSONSerialization+TechD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSJSONSerialization+TechD.h"; sourceTree = "<group>"; };
+		2A5207731AC0710A005FE8A7 /* NSJSONSerialization+TechD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSJSONSerialization+TechD.m"; sourceTree = "<group>"; };
+		2A5207741AC0710A005FE8A7 /* NSString+TechD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TechD.h"; sourceTree = "<group>"; };
+		2A5207751AC0710A005FE8A7 /* NSString+TechD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TechD.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +85,11 @@
 		2A5207591AC07065005FE8A7 /* Foundation+TechD */ = {
 			isa = PBXGroup;
 			children = (
-				2A52075A1AC07065005FE8A7 /* Foundation_TechD.h */,
-				2A52075C1AC07065005FE8A7 /* Foundation_TechD.m */,
+				2A5207711AC0710A005FE8A7 /* Foundation+TechD.h */,
+				2A5207721AC0710A005FE8A7 /* NSJSONSerialization+TechD.h */,
+				2A5207731AC0710A005FE8A7 /* NSJSONSerialization+TechD.m */,
+				2A5207741AC0710A005FE8A7 /* NSString+TechD.h */,
+				2A5207751AC0710A005FE8A7 /* NSString+TechD.m */,
 			);
 			path = "Foundation+TechD";
 			sourceTree = "<group>";
@@ -193,7 +198,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A52075D1AC07065005FE8A7 /* Foundation_TechD.m in Sources */,
+				2A5207771AC0710A005FE8A7 /* NSString+TechD.m in Sources */,
+				2A5207761AC0710A005FE8A7 /* NSJSONSerialization+TechD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,7 +254,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -282,7 +288,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
