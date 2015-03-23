@@ -1,0 +1,371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A52075B1AC07065005FE8A7 /* Foundation_TechD.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2A52075A1AC07065005FE8A7 /* Foundation_TechD.h */; };
+		2A52075D1AC07065005FE8A7 /* Foundation_TechD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A52075C1AC07065005FE8A7 /* Foundation_TechD.m */; };
+		2A5207631AC07065005FE8A7 /* libFoundation+TechD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5207571AC07065005FE8A7 /* libFoundation+TechD.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2A5207641AC07065005FE8A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A52074F1AC07065005FE8A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A5207561AC07065005FE8A7;
+			remoteInfo = "Foundation+TechD";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2A5207551AC07065005FE8A7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				2A52075B1AC07065005FE8A7 /* Foundation_TechD.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2A5207571AC07065005FE8A7 /* libFoundation+TechD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libFoundation+TechD.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A52075A1AC07065005FE8A7 /* Foundation_TechD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Foundation_TechD.h; sourceTree = "<group>"; };
+		2A52075C1AC07065005FE8A7 /* Foundation_TechD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Foundation_TechD.m; sourceTree = "<group>"; };
+		2A5207621AC07065005FE8A7 /* Foundation+TechDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Foundation+TechDTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A5207681AC07065005FE8A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A5207541AC07065005FE8A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A52075F1AC07065005FE8A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A5207631AC07065005FE8A7 /* libFoundation+TechD.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A52074E1AC07065005FE8A7 = {
+			isa = PBXGroup;
+			children = (
+				2A5207591AC07065005FE8A7 /* Foundation+TechD */,
+				2A5207661AC07065005FE8A7 /* Foundation+TechDTests */,
+				2A5207581AC07065005FE8A7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2A5207581AC07065005FE8A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A5207571AC07065005FE8A7 /* libFoundation+TechD.a */,
+				2A5207621AC07065005FE8A7 /* Foundation+TechDTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A5207591AC07065005FE8A7 /* Foundation+TechD */ = {
+			isa = PBXGroup;
+			children = (
+				2A52075A1AC07065005FE8A7 /* Foundation_TechD.h */,
+				2A52075C1AC07065005FE8A7 /* Foundation_TechD.m */,
+			);
+			path = "Foundation+TechD";
+			sourceTree = "<group>";
+		};
+		2A5207661AC07065005FE8A7 /* Foundation+TechDTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A5207671AC07065005FE8A7 /* Supporting Files */,
+			);
+			path = "Foundation+TechDTests";
+			sourceTree = "<group>";
+		};
+		2A5207671AC07065005FE8A7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A5207681AC07065005FE8A7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A5207561AC07065005FE8A7 /* Foundation+TechD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A52076B1AC07065005FE8A7 /* Build configuration list for PBXNativeTarget "Foundation+TechD" */;
+			buildPhases = (
+				2A5207531AC07065005FE8A7 /* Sources */,
+				2A5207541AC07065005FE8A7 /* Frameworks */,
+				2A5207551AC07065005FE8A7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Foundation+TechD";
+			productName = "Foundation+TechD";
+			productReference = 2A5207571AC07065005FE8A7 /* libFoundation+TechD.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		2A5207611AC07065005FE8A7 /* Foundation+TechDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A52076E1AC07065005FE8A7 /* Build configuration list for PBXNativeTarget "Foundation+TechDTests" */;
+			buildPhases = (
+				2A52075E1AC07065005FE8A7 /* Sources */,
+				2A52075F1AC07065005FE8A7 /* Frameworks */,
+				2A5207601AC07065005FE8A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A5207651AC07065005FE8A7 /* PBXTargetDependency */,
+			);
+			name = "Foundation+TechDTests";
+			productName = "Foundation+TechDTests";
+			productReference = 2A5207621AC07065005FE8A7 /* Foundation+TechDTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A52074F1AC07065005FE8A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = TechD;
+				TargetAttributes = {
+					2A5207561AC07065005FE8A7 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					2A5207611AC07065005FE8A7 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = 2A5207521AC07065005FE8A7 /* Build configuration list for PBXProject "Foundation+TechD" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2A52074E1AC07065005FE8A7;
+			productRefGroup = 2A5207581AC07065005FE8A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A5207561AC07065005FE8A7 /* Foundation+TechD */,
+				2A5207611AC07065005FE8A7 /* Foundation+TechDTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A5207601AC07065005FE8A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A5207531AC07065005FE8A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A52075D1AC07065005FE8A7 /* Foundation_TechD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A52075E1AC07065005FE8A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A5207651AC07065005FE8A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A5207561AC07065005FE8A7 /* Foundation+TechD */;
+			targetProxy = 2A5207641AC07065005FE8A7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2A5207691AC07065005FE8A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2A52076A1AC07065005FE8A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2A52076C1AC07065005FE8A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2A52076D1AC07065005FE8A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		2A52076F1AC07065005FE8A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Foundation+TechDTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2A5207701AC07065005FE8A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Foundation+TechDTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A5207521AC07065005FE8A7 /* Build configuration list for PBXProject "Foundation+TechD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A5207691AC07065005FE8A7 /* Debug */,
+				2A52076A1AC07065005FE8A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A52076B1AC07065005FE8A7 /* Build configuration list for PBXNativeTarget "Foundation+TechD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A52076C1AC07065005FE8A7 /* Debug */,
+				2A52076D1AC07065005FE8A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2A52076E1AC07065005FE8A7 /* Build configuration list for PBXNativeTarget "Foundation+TechDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A52076F1AC07065005FE8A7 /* Debug */,
+				2A5207701AC07065005FE8A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A52074F1AC07065005FE8A7 /* Project object */;
+}
