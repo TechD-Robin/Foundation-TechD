@@ -18,60 +18,67 @@
 
 //  ------------------------------------------------------------------------------------------------
 //  ------------------------------------------------------------------------------------------------
-+ ( BOOL ) saveJSONContainer:(NSDictionary *)container toFileAtPath:(NSString *)filepath
+//  --------------------------------
++ ( BOOL ) saveJSONContainer:(NSDictionary *)container toFileAtPath:(NSString *)filepath error:(NSError * __autoreleasing *)error
 {
-    if ( ( nil == container ) || ( nil == filepath ) )
-    {
-        return NO;
-    }
+    NSParameterAssert( nil != container );
+    NSParameterAssert( nil != filepath );
     
-    NSError                   * error;
-    NSFileManager             * manager;
-    NSOutputStream            * outputStream;
+    NSError                       * saveError;
+    NSFileManager                 * manager;
+    NSOutputStream                * outputStream;
     
-    error                       = nil;
-    outputStream                = nil;
-    manager                     = [NSFileManager defaultManager];
+    saveError                       = nil;
+    outputStream                    = nil;
+    manager                         = [NSFileManager defaultManager];
 
     //  pre-create subpath on here, because NSJSONSerialization's writeJSONObject: toStream: ..., save the JSON file without create subpath of the file path.
     if ( [manager fileExistsAtPath: [filepath stringByDeletingLastPathComponent]] == NO )
     {
-        error                       = nil;
-        if ( [manager createDirectoryAtPath: [filepath stringByDeletingLastPathComponent] withIntermediateDirectories: YES attributes: nil error: &error] == NO )
+        saveError                   = nil;
+        if ( [manager createDirectoryAtPath: [filepath stringByDeletingLastPathComponent] withIntermediateDirectories: YES attributes: nil error: &saveError] == NO )
         {
-            NSLog( @"create sub path error : %@", error );
+            if ( nil != error )
+            {
+                *error              = saveError;
+            }
             return NO;
         }
     }
     
     //  first, remove the exist file.
+    saveError                       = nil;
     if ( [manager fileExistsAtPath: filepath] == YES )
     {
-        if ( [manager removeItemAtPath: filepath error: &error] == NO )
+        if ( [manager removeItemAtPath: filepath error: &saveError] == NO )
         {
-            NSLog( @"delete file error : %@", error );
+            NSLog( @"delete file error : %@", saveError );
         }
     }
     
     //  second, save container to file.
-    outputStream                = [NSOutputStream outputStreamToFileAtPath: filepath append: NO];
-    if ( nil == outputStream )
-    {
-        NSLog( @"save json to file error." );
-        return NO;
-    }
+    outputStream                    = [NSOutputStream outputStreamToFileAtPath: filepath append: NO];
+    NSParameterAssert( nil != outputStream );
     
-    [outputStream               open];
-    [NSJSONSerialization        writeJSONObject: container toStream: outputStream options: 0 error: &error];
-    if ( nil != error )
+    saveError                       = nil;
+    [outputStream                   open];
+    [NSJSONSerialization            writeJSONObject: container toStream: outputStream options: 0 error: &saveError];
+    if ( nil != saveError )
     {
-        NSLog( @"json data save to file error :%@", error );
-        [outputStream           close];
+        if ( nil != error )
+        {
+            *error                  = saveError;
+        }
+        [outputStream               close];
         return NO;
     }
     
     //  finish.
-    [outputStream               close];
+    [outputStream                   close];
+    if ( nil != error )
+    {
+        *error                      = NULL;
+    }
     return YES;
 }
 

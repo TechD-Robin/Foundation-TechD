@@ -21,11 +21,11 @@
  *
  *  @param container                the JSON data container.
  *  @param filepath                 the file path (full path).
+ *  @param error                    assign pointer of a error object when method has error.
  *
  *  @return YES|NO                  method success or failure
  */
-+ ( BOOL ) saveJSONContainer:(NSDictionary *)container toFileAtPath:(NSString *)filepath;
-
++ ( BOOL ) saveJSONContainer:(NSDictionary *)container toFileAtPath:(NSString *)filepath error:(NSError * __autoreleasing *)error;
 
 //  ------------------------------------------------------------------------------------------------
 //  ------------------------------------------------------------------------------------------------
