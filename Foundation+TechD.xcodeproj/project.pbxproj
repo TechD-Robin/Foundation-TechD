@@ -10,6 +10,7 @@
 		2A5207631AC07065005FE8A7 /* libFoundation+TechD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5207571AC07065005FE8A7 /* libFoundation+TechD.a */; };
 		2A5207761AC0710A005FE8A7 /* NSJSONSerialization+TechD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5207731AC0710A005FE8A7 /* NSJSONSerialization+TechD.m */; };
 		2A5207771AC0710A005FE8A7 /* NSString+TechD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5207751AC0710A005FE8A7 /* NSString+TechD.m */; };
+		2A9A76581AE171C0007F36D3 /* NSDate+TechD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9A76571AE171C0007F36D3 /* NSDate+TechD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		2A5207731AC0710A005FE8A7 /* NSJSONSerialization+TechD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSJSONSerialization+TechD.m"; sourceTree = "<group>"; };
 		2A5207741AC0710A005FE8A7 /* NSString+TechD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TechD.h"; sourceTree = "<group>"; };
 		2A5207751AC0710A005FE8A7 /* NSString+TechD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TechD.m"; sourceTree = "<group>"; };
+		2A9A76561AE171C0007F36D3 /* NSDate+TechD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TechD.h"; sourceTree = "<group>"; };
+		2A9A76571AE171C0007F36D3 /* NSDate+TechD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TechD.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,10 +89,12 @@
 			isa = PBXGroup;
 			children = (
 				2A5207711AC0710A005FE8A7 /* Foundation+TechD.h */,
-				2A5207721AC0710A005FE8A7 /* NSJSONSerialization+TechD.h */,
-				2A5207731AC0710A005FE8A7 /* NSJSONSerialization+TechD.m */,
 				2A5207741AC0710A005FE8A7 /* NSString+TechD.h */,
 				2A5207751AC0710A005FE8A7 /* NSString+TechD.m */,
+				2A9A76561AE171C0007F36D3 /* NSDate+TechD.h */,
+				2A9A76571AE171C0007F36D3 /* NSDate+TechD.m */,
+				2A5207721AC0710A005FE8A7 /* NSJSONSerialization+TechD.h */,
+				2A5207731AC0710A005FE8A7 /* NSJSONSerialization+TechD.m */,
 			);
 			path = "Foundation+TechD";
 			sourceTree = "<group>";
@@ -200,6 +205,7 @@
 			files = (
 				2A5207771AC0710A005FE8A7 /* NSString+TechD.m in Sources */,
 				2A5207761AC0710A005FE8A7 /* NSJSONSerialization+TechD.m in Sources */,
+				2A9A76581AE171C0007F36D3 /* NSDate+TechD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +368,7 @@
 				2A52076D1AC07065005FE8A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A52076E1AC07065005FE8A7 /* Build configuration list for PBXNativeTarget "Foundation+TechDTests" */ = {
 			isa = XCConfigurationList;
@@ -370,6 +377,7 @@
 				2A5207701AC07065005FE8A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
