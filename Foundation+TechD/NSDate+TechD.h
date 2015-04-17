@@ -18,6 +18,11 @@
 //  UTC : Universal Time Coordinated;   GMT : Greenwich mean time.
 //  date formatts string code : https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/DataFormatting/Articles/dfDateFormatting10_4.html#//apple_ref/doc/uid/TP40002369-SW1 .
 //  locale identifier list :  https://gist.github.com/jacobbubu/1836273. or code '[NSLocale availableLocaleIdentifiers]'.
+//
+//  ------------------------------------------------------------------------------------------------
+//  * notice :
+//  apple's original api will not assign(or copy) new properties when create a new date instance,
+//  each object of create from original api, flag of GMT always is NO.
 //  ------------------------------------------------------------------------------------------------
 //  ------------------------------------------------------------------------------------------------
 
@@ -126,6 +131,8 @@
  *  @return YES|NO                  the date is in effective period or not.
  */
 - ( BOOL ) isEffectivePeriod:(NSDate *)validDate and:(NSDate *)expireDate;
+
+//  ------------------------------------------------------------------------------------------------
 
 @end
 
