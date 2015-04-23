@@ -13,6 +13,7 @@
 
     #import "NSString+TechD.h"
     #import "NSDate+TechD.h"
+    #import "NSBundle+TechD"
     #import "NSJSONSerialization+TechD.h"
 #endif  //  End of _FOUNDATION_TECHD_.
 
