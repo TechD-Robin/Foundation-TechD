@@ -49,7 +49,15 @@ typedef NS_ENUM( NSInteger, NSPropertyListSerialization_TechDErrorCode )
 //  ------------------------------------------------------------------------------------------------
 #pragma mark private method for NSPropertyListSerialization+TechD
 //  ------------------------------------------------------------------------------------------------
-
+/**
+ *  @brief create a error object by error code.
+ *  create a error object by error code.
+ *
+ *  @param relationObject           a relation object for error message.
+ *  @param errorCode                a error code.
+ *
+ *  @return object|nil              a error object or nil.
+ */
 NSError * _Error( id relationObject, NSPropertyListSerialization_TechDErrorCode errorCode )
 {
     NSString                      * errorMessage;
