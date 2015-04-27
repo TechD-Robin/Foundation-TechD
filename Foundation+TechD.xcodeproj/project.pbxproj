@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A187D2E1AED632A00B457FD /* NSPropertyListSerialization+TechD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A187D2D1AED632A00B457FD /* NSPropertyListSerialization+TechD.m */; };
 		2A29A5411AE90ADD005358F9 /* NSBundle+TechD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A29A5401AE90ADD005358F9 /* NSBundle+TechD.m */; };
 		2A5207631AC07065005FE8A7 /* libFoundation+TechD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5207571AC07065005FE8A7 /* libFoundation+TechD.a */; };
 		2A5207761AC0710A005FE8A7 /* NSJSONSerialization+TechD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5207731AC0710A005FE8A7 /* NSJSONSerialization+TechD.m */; };
@@ -37,6 +38,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2A187D2C1AED632A00B457FD /* NSPropertyListSerialization+TechD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSPropertyListSerialization+TechD.h"; sourceTree = "<group>"; };
+		2A187D2D1AED632A00B457FD /* NSPropertyListSerialization+TechD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSPropertyListSerialization+TechD.m"; sourceTree = "<group>"; };
 		2A29A53F1AE90ADD005358F9 /* NSBundle+TechD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+TechD.h"; sourceTree = "<group>"; };
 		2A29A5401AE90ADD005358F9 /* NSBundle+TechD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+TechD.m"; sourceTree = "<group>"; };
 		2A5207571AC07065005FE8A7 /* libFoundation+TechD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libFoundation+TechD.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +103,8 @@
 				2A29A5401AE90ADD005358F9 /* NSBundle+TechD.m */,
 				2A5207721AC0710A005FE8A7 /* NSJSONSerialization+TechD.h */,
 				2A5207731AC0710A005FE8A7 /* NSJSONSerialization+TechD.m */,
+				2A187D2C1AED632A00B457FD /* NSPropertyListSerialization+TechD.h */,
+				2A187D2D1AED632A00B457FD /* NSPropertyListSerialization+TechD.m */,
 			);
 			path = "Foundation+TechD";
 			sourceTree = "<group>";
@@ -211,6 +216,7 @@
 				2A5207771AC0710A005FE8A7 /* NSString+TechD.m in Sources */,
 				2A29A5411AE90ADD005358F9 /* NSBundle+TechD.m in Sources */,
 				2A5207761AC0710A005FE8A7 /* NSJSONSerialization+TechD.m in Sources */,
+				2A187D2E1AED632A00B457FD /* NSPropertyListSerialization+TechD.m in Sources */,
 				2A9A76581AE171C0007F36D3 /* NSDate+TechD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
