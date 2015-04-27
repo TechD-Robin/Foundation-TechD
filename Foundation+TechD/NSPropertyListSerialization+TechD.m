@@ -220,7 +220,7 @@ NSError * _Error( id relationObject, NSPropertyListSerialization_TechDErrorCode 
     }
 
     plistData                       = [plistString dataUsingEncoding: encode];
-    if ( nil != plistData )
+    if ( nil == plistData )
     {
         if ( NULL != error )
         {
@@ -229,6 +229,7 @@ NSError * _Error( id relationObject, NSPropertyListSerialization_TechDErrorCode 
         return nil;
     }
     
+    loadError                       = nil;
     dataContainer                   = [NSPropertyListSerialization propertyListWithData: plistData options: NSPropertyListMutableContainersAndLeaves
                                                                                  format: &format error: &loadError];
     if ( nil != loadError )
