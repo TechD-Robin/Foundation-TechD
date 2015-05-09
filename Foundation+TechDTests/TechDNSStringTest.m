@@ -32,13 +32,23 @@
 - ( void ) testRegularExpression
 {
     NSString                  * testString;
+    NSString                  * regularExpress;
     
     testString                  = @"abc";
+    regularExpress              = @"([^*|:\"<>?]|[ ]|\\w)+@[1-9][0-9]*+[xX]$";
     NSLog( @"regular expression parse result : %d", [testString compareByRegularExpression: @"(\\w)+"] );
     
     testString                  = @"ab c";
     NSLog( @"regular expression parse result : %d", [testString compareByRegularExpression: @"(\\w)+"] );
     
+    testString                  = @"@2x";
+    NSLog( @"regular expression parse result : %d", [testString compareByRegularExpression: regularExpress] );
+    
+    testString                  = @" @2x";
+    NSLog( @"regular expression parse result : %d", [testString compareByRegularExpression: regularExpress] );
+    
+    testString                  = @"?@2x";
+    NSLog( @"regular expression parse result : %d", [testString compareByRegularExpression: regularExpress] );
     
 }
 
@@ -46,6 +56,28 @@
 //  ------------------------------------------------------------------------------------------------
 
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
