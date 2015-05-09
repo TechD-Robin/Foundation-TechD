@@ -61,7 +61,7 @@
     if ( 0 != result )
     {
         regerror( result, &regular, errorMsg, sizeof( errorMsg ) );
-        NSLog( @"%s", errorMsg );
+        regfree( &regular );
         return NO;
     }
     
@@ -69,7 +69,6 @@
     if ( REG_NOMATCH == result )
     {
         regerror( result, &regular, errorMsg, sizeof( errorMsg ) );
-        NSLog( @"%s", errorMsg );
         regfree( &regular );
         return NO;
     }
