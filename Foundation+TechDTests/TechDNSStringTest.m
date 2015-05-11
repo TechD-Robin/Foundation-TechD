@@ -69,7 +69,6 @@
 }
 
 
-
 //  ------------------------------------------------------------------------------------------------
 - ( void ) testRegularExpression
 {
@@ -77,19 +76,19 @@
     NSString                  * regularExpress;
     
     testString                  = @"abc";
-//    regularExpress              = @"([^*|:\"<>?]|[ ]|\\w)+@[1-9][0-9]*+[xX]$";
-    regularExpress              = @"([^*|:\"<>?]|[ ]|\\w)+@[1-9][0-9]*[xX]$";
+    //    regularExpress              = @"([^*|:\"<>?]|[ ]|\\w)+@[1-9][0-9]*+[xX]$";
+    regularExpress              = @"[^*|:\"<>?]+@[1-9][0-9]*[xX]$";
     
     NSLog( @"regular expression parse result : %d", [testString compareByRegularExpression: @"[a-zA-Z]+"] );
     
     NSLog( @"regular expression parse result : %d", [testString compareByRegularExpression: @"[a-zA-Z]{2}"] );
-
+    
     testString                  = @"abc:";
     NSLog( @"regular expression parse result : %d", [testString compareByRegularExpression: @"[a-zA-Z]+"] );
-
+    
     testString                  = @"ab c";
     NSLog( @"regular expression parse result : %d", [testString compareByRegularExpression: @"([^*|:\"<>?]|[ ]|\\w)+"] );
-
+    
     testString                  = @"@2x";
     NSLog( @"regular expression parse result : %d", [testString compareByRegularExpression: regularExpress] );
     
@@ -101,7 +100,7 @@
     
     testString                  = @"ic_file_download_grey600_36dp";
     NSLog( @"regular expression parse result : %d", [testString compareByRegularExpression: regularExpress] );
-
+    
     testString                  = @"ic_file_download_grey600_36dp@0X";
     NSLog( @"regular expression parse result : %d", [testString compareByRegularExpression: regularExpress] );
     
@@ -112,6 +111,81 @@
     NSLog( @"regular expression parse result : %d", [testString compareByRegularExpression: regularExpress] );
     
 }
+
+////  ------------------------------------------------------------------------------------------------
+//- ( void ) testRegExObjC1
+//{
+//    NSPredicate                   * predicate;
+//    
+//    predicate                       = [NSPredicate predicateWithFormat: @"SELF MATCHES %@", @"([^*|:\"<>?]|[ ]|\\w)+@[1-9][0-9]*[xX]$"];
+//    [predicate evaluateWithObject: @"1234567890123456789012345"];
+//}
+//
+////  ------------------------------------------------------------------------------------------------
+//- ( void ) testRegExObjC2
+//{
+//    NSPredicate                   * predicate;
+//    
+//    predicate                       = [NSPredicate predicateWithFormat: @"SELF MATCHES %@", @"([^*|:\"<>?])+@[1-9][0-9]*[xX]$"];
+//    [predicate evaluateWithObject: @"1234567890123456789012345"];
+//}
+//
+////  ------------------------------------------------------------------------------------------------
+//- ( void ) testRegExObjC3
+//{
+//    NSPredicate                   * predicate;
+//    
+//    predicate                       = [NSPredicate predicateWithFormat: @"SELF MATCHES %@", @"([^*|:\"<>?])+@[1-9][0-9]*[xX]$"];
+//    [predicate evaluateWithObject: @"123456789012345678901234567890"];
+//}
+//
+////  ------------------------------------------------------------------------------------------------
+//- ( void ) testRegExObjC4
+//{
+//    NSPredicate                   * predicate;
+//    
+//    predicate                       = [NSPredicate predicateWithFormat: @"SELF MATCHES %@", @"([^*|:\"<>?])+@[1-9][0-9]*[xX]$"];
+//    [predicate evaluateWithObject: @"123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890"];
+//}
+//
+//
+////  ------------------------------------------------------------------------------------------------
+//- ( void ) testRegExC1
+//{
+//    NSString                      * parseString;
+//    
+//    parseString                     = @"1234567890123456789012345";
+//    [parseString                    compareByRegularExpression: @"([^*|:\"<>?]|[ ]|\\w)+@[1-9][0-9]*[xX]$"];
+//}
+//
+////  ------------------------------------------------------------------------------------------------
+//- ( void ) testRegExC2
+//{
+//    NSString                      * parseString;
+//    
+//    parseString                     = @"1234567890123456789012345";
+//    [parseString                    compareByRegularExpression: @"([^*|:\"<>?])+@[1-9][0-9]*[xX]$"];
+//}
+//
+////  ------------------------------------------------------------------------------------------------
+//- ( void ) testRegExC3
+//{
+//    NSString                      * parseString;
+//    
+//    parseString                     = @"123456789012345678901234567890";
+//    [parseString                    compareByRegularExpression: @"([^*|:\"<>?])+@[1-9][0-9]*[xX]$"];
+//}
+//
+////  ------------------------------------------------------------------------------------------------
+//- ( void ) testRegExC4
+//{
+//    NSString                      * parseString;
+//    
+//    parseString                     = @"123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890";
+//    [parseString                    compareByRegularExpression: @"([^*|:\"<>?])+@[1-9][0-9]*[xX]$"];
+//}
+//
+////  ------------------------------------------------------------------------------------------------
 
 //  ------------------------------------------------------------------------------------------------
 //  ------------------------------------------------------------------------------------------------
