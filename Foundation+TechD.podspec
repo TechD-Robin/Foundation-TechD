@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Foundation+TechD"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "A base functional library of Tech.D."
 
   s.homepage     = "https://git.techd.idv.tw:5001"
