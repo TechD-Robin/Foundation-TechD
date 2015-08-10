@@ -49,6 +49,7 @@
 		2A187D2D1AED632A00B457FD /* NSPropertyListSerialization+TechD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSPropertyListSerialization+TechD.m"; sourceTree = "<group>"; };
 		2A29A53F1AE90ADD005358F9 /* NSBundle+TechD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+TechD.h"; sourceTree = "<group>"; };
 		2A29A5401AE90ADD005358F9 /* NSBundle+TechD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+TechD.m"; sourceTree = "<group>"; };
+		2A40E8831B79266E007914F0 /* Foundation+TechD.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Foundation+TechD.podspec"; sourceTree = "<group>"; };
 		2A4358581AFDDAE3001AEF63 /* TechDNSStringTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TechDNSStringTest.m; sourceTree = "<group>"; };
 		2A5207571AC07065005FE8A7 /* libFoundation+TechD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libFoundation+TechD.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A5207621AC07065005FE8A7 /* Foundation+TechDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Foundation+TechDTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +89,7 @@
 				2A5207591AC07065005FE8A7 /* Foundation+TechD */,
 				2A5207661AC07065005FE8A7 /* Foundation+TechDTests */,
 				2A5207581AC07065005FE8A7 /* Products */,
+				2A40E8831B79266E007914F0 /* Foundation+TechD.podspec */,
 			);
 			sourceTree = "<group>";
 		};
