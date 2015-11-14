@@ -3,13 +3,21 @@ Pod::Spec.new do |s|
 
   s.name         = "Foundation+TechD"
   s.version      = "0.0.3"
-  s.summary      = "A base functional library of Tech.D."
+  s.summary      = "This library is base functional library of Tech.D, is a Category."
 
-  s.homepage     = "https://git.techd.idv.tw:5001"
-  s.source       = { :git => "git://git.techd.idv.tw/Categories/Foundation+TechD.git", :tag => "#{s.version}" }
+  s.description  = <<-DESC
+                   This library is base functional library of Tech.D, is a Category.
 
-  s.license      = { :type=> "No License", :file => "LICENSE" }
-  s.author       = { "Robin Hsu" => "robinhsu599+dev@gmail.com" }
+                   * There are extended methods for framework of Foundation.
+                   DESC
+
+
+  s.homepage     = "https://github.com/TechD-Robin/Foundation-TechD/"
+  s.source       = { :git => "https://github.com/TechD-Robin/Foundation-TechD.git", :tag => "#{s.version}" }
+
+  s.license            = 'MIT'
+  s.author             = { "Robin Hsu" => "robinhsu599+dev@gmail.com" }
+  s.social_media_url   = "https://plus.google.com/+RobinHsu"
 
 
   s.platform     = :ios, "8.0"
