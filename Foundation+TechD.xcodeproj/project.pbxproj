@@ -14,6 +14,8 @@
 		2A43585B1AFDDCC7001AEF63 /* NSDate+TechD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9A76571AE171C0007F36D3 /* NSDate+TechD.m */; };
 		2A43585C1AFDDCC7001AEF63 /* NSBundle+TechD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A29A5401AE90ADD005358F9 /* NSBundle+TechD.m */; };
 		2A43585D1AFDDCC7001AEF63 /* NSJSONSerialization+TechD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5207731AC0710A005FE8A7 /* NSJSONSerialization+TechD.m */; };
+		2A46EF511D3DDCAD004E0DAB /* NSError+TechD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A46EF501D3DDCAD004E0DAB /* NSError+TechD.m */; };
+		2A46EF521D3DDCAD004E0DAB /* NSError+TechD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A46EF501D3DDCAD004E0DAB /* NSError+TechD.m */; };
 		2A5207631AC07065005FE8A7 /* libFoundation+TechD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5207571AC07065005FE8A7 /* libFoundation+TechD.a */; };
 		2A5207761AC0710A005FE8A7 /* NSJSONSerialization+TechD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5207731AC0710A005FE8A7 /* NSJSONSerialization+TechD.m */; };
 		2A5207771AC0710A005FE8A7 /* NSString+TechD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5207751AC0710A005FE8A7 /* NSString+TechD.m */; };
@@ -51,6 +53,8 @@
 		2A29A5401AE90ADD005358F9 /* NSBundle+TechD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+TechD.m"; sourceTree = "<group>"; };
 		2A40E8831B79266E007914F0 /* Foundation+TechD.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Foundation+TechD.podspec"; sourceTree = "<group>"; };
 		2A4358581AFDDAE3001AEF63 /* TechDNSStringTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TechDNSStringTest.m; sourceTree = "<group>"; };
+		2A46EF4F1D3DDCAD004E0DAB /* NSError+TechD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+TechD.h"; sourceTree = "<group>"; };
+		2A46EF501D3DDCAD004E0DAB /* NSError+TechD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+TechD.m"; sourceTree = "<group>"; };
 		2A5207571AC07065005FE8A7 /* libFoundation+TechD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libFoundation+TechD.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A5207621AC07065005FE8A7 /* Foundation+TechDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Foundation+TechDTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A5207681AC07065005FE8A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				2A5207711AC0710A005FE8A7 /* Foundation+TechD.h */,
+				2A46EF4F1D3DDCAD004E0DAB /* NSError+TechD.h */,
+				2A46EF501D3DDCAD004E0DAB /* NSError+TechD.m */,
 				2A5207741AC0710A005FE8A7 /* NSString+TechD.h */,
 				2A5207751AC0710A005FE8A7 /* NSString+TechD.m */,
 				2A9A76561AE171C0007F36D3 /* NSDate+TechD.h */,
@@ -230,6 +236,7 @@
 				2A29A5411AE90ADD005358F9 /* NSBundle+TechD.m in Sources */,
 				2A5207761AC0710A005FE8A7 /* NSJSONSerialization+TechD.m in Sources */,
 				2A187D2E1AED632A00B457FD /* NSPropertyListSerialization+TechD.m in Sources */,
+				2A46EF511D3DDCAD004E0DAB /* NSError+TechD.m in Sources */,
 				2A9A76581AE171C0007F36D3 /* NSDate+TechD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A46EF521D3DDCAD004E0DAB /* NSError+TechD.m in Sources */,
 				2A43585A1AFDDCC7001AEF63 /* NSString+TechD.m in Sources */,
 				2A43585B1AFDDCC7001AEF63 /* NSDate+TechD.m in Sources */,
 				2A43585C1AFDDCC7001AEF63 /* NSBundle+TechD.m in Sources */,
