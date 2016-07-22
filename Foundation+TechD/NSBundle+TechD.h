@@ -42,9 +42,34 @@
 
 //  ------------------------------------------------------------------------------------------------
 //  ------------------------------------------------------------------------------------------------
+/**
+ *  @brief compare bundle identifier of parameter with info dictionary's bundle identifier.
+ *
+ *  @param bundleIdentifier         the bundle identifier will compare.
+ *
+ *  @return YES|NO                  the both bundle identifier is equal or not.
+ */
++ ( BOOL ) compareBundleIdentifierWithInfoDictionary:( NSString * )bundleIdentifier;
+
+//  ------------------------------------------------------------------------------------------------
 
 
 @end
 
 //  ------------------------------------------------------------------------------------------------
 //  ------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

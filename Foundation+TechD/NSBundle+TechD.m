@@ -44,6 +44,39 @@
 
 //  ------------------------------------------------------------------------------------------------
 //  ------------------------------------------------------------------------------------------------
+//  --------------------------------
++ ( BOOL ) compareBundleIdentifierWithInfoDictionary:( NSString * )bundleIdentifier
+{
+    NSParameterAssert( nil != bundleIdentifier );
+    
+    NSBundle                      * bundle;
+    NSString                      * identifier;
+    
+    bundle                          = [NSBundle bundleWithIdentifier: bundleIdentifier];
+    if ( nil == bundle )
+    {
+        NSLog( @"Warning, cannot find the bundle object by bundle identifier : '%@'!", bundleIdentifier );
+        return NO;
+    }
+    
+    identifier                      = [bundle objectForInfoDictionaryKey: @"CFBundleIdentifier"];
+    if ( nil == identifier )
+    {
+        NSLog( @"Warning, cannot get the bundle identifier from the bundle Info!" );
+        return NO;
+    }
+    
+    if ( [bundleIdentifier isEqualToString: identifier] == NO )
+    {
+        NSLog( @"Warning, the compare bundle identifier is not equal bundle Info!" );
+        return NO;
+    }
+    
+    return YES;
+}
+
+//  ------------------------------------------------------------------------------------------------
+//  ------------------------------------------------------------------------------------------------
 
 @end
 
